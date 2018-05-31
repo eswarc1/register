@@ -24,6 +24,7 @@ public class User {
     @Column
 	private String password;
     
+	
 	public String getEmail() {
 		return email;
 	}
@@ -49,12 +50,12 @@ public class User {
 		this.phoneNumber = phoneNumber;
 	}
 	
-	@JsonIgnore
+
 	public String getPassword() {
 		return password;
 	}
 	
-	@JsonSetter
+
 	public void setPassword(String password) {
 		this.password = password;
 	}

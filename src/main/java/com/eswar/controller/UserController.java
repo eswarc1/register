@@ -44,9 +44,9 @@ public class UserController {
 	
 	
 	@PostMapping("/user")
-	public User saveUser(@RequestBody User user) throws UserNotFoundException {
+	public User postUser(@RequestBody User user) throws UserNotFoundException {
 	
-			service.createsUser(user);	
+			service.saveUser(user);	
 			
 			return user;
 	}
@@ -56,7 +56,7 @@ public class UserController {
 	@DeleteMapping("/user/{email}")
 	public void deleteUser(@PathVariable String email) throws UserNotFoundException {
 		
-			service.deletesUser(email);
+			service.removeUser(email);
 	
 		}
 

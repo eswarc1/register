@@ -14,9 +14,9 @@ public interface UserService {
 	
 	public User findUserByEmail(String email) throws UserNotFoundException;
 	
-	public void createsUser(User user) throws UserNotFoundException;
+	public User saveUser(User user) throws UserNotFoundException;
 	
-	public void deletesUser(String email) throws UserNotFoundException;
+	public void removeUser(String email) throws UserNotFoundException;
 
 
 }
